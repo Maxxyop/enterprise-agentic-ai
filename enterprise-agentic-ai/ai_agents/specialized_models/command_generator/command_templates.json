@@ -1,0 +1,20 @@
+{
+    "recon_plan": "Create a comprehensive reconnaissance plan for {target} including active and passive techniques",
+    "vulnerability_scan": "Analyze scan results from {tool} and identify vulnerabilities in {target}",
+    "exploit_planning": "Develop exploit strategy for {vulnerability} on {target} considering defenses {defenses}",
+    "post_exploitation": "Outline post-exploitation steps after gaining access to {system}",
+    "report_outline": "Create pentest report outline for engagement on {target} including executive summary and technical details",
+    "cwe_analysis": "Analyze how {cwe_id} vulnerability manifests in this code: {code_snippet}",
+    "buffer_overflow": "Develop buffer overflow exploit for {application} version {version} on {platform}. Known offset: {offset}, bad characters: {bad_chars}. Generate Python exploit code.",
+    "sql_injection": "Create SQL injection exploit for {url} with injection point at {parameter}. DB type: {db_type}. Include data exfiltration commands.",
+    "xss_exploit": "Create advanced XSS exploit for {url} that bypasses {protection_mechanism}. Include cookie stealing and keylogger functionality.",
+    "command_injection": "Develop OS command injection exploit for {application} at {endpoint}. Target OS: {os}. Include reverse shell payload.",
+    "deserialization": "Create exploit for insecure deserialization vulnerability in {application} using {protocol}. Generate payload that executes {command}.",
+    "advanced_persistent_threat": "Design APT-style attack chain starting with {initial_vector} and including lateral movement to {target_systems} with persistence via {method}.",
+    "cve_analysis": "Analyze CVE-{cve_id} with CVSS score {cvss}. Describe attack vectors, potential impact on {system_type}, and recommended mitigation strategies.",
+    "scan_result_analysis": "Analyze vulnerability scan results from {tool}: {scan_results} Prioritize findings based on risk to {business_context} and provide remediation roadmap.",
+    "zero_day_analysis": "Analyze potential zero-day vulnerability in {software} based on these indicators: {indicators} Describe exploitation techniques and detection methods.",
+    "threat_modeling": "Conduct threat modeling for {application} using {methodology}. Identify attack surface, potential threats, and security controls. Focus on {business_assets} protection.",
+    "cloud_security": "Analyze security configuration of {cloud_provider} environment: {config_data} Identify misconfigurations and compliance violations against {standard}.",
+    "attack_path": "Analyze attack path from {entry_point} to {critical_asset} in this network diagram: {network_map} Identify critical vulnerabilities and suggest segmentation strategies."
+}

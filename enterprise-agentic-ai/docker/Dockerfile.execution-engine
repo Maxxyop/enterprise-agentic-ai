@@ -1,0 +1,22 @@
+FROM python:3.9-slim
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the requirements file
+COPY requirements/ai.txt requirements/base.txt ./
+
+# Install dependencies
+RUN pip install --no-cache-dir -r base.txt && \
+    pip install --no-cache-dir -r ai.txt
+
+# Copy the execution engine code
+COPY execution_engine/ /app/execution_engine/
+
+# Copy the tools and dynamic tooling
+COPY execution_engine/tools/ /app/execution_engine/tools/
+COPY execution_engine/dynamic_tooling/ /app/execution_engine/dynamic_tooling/
+COPY execution_engine/environments/ /app/execution_engine/environments/
+
+# Set the entry point for the container
+ENTRYPOINT ["python", "-m", "execution_engine.core.executor"]

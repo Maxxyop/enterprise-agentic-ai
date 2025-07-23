@@ -1,0 +1,16 @@
+sandbox_settings:
+  docker:
+    image: "your-docker-image:latest"
+    network: "sandbox-network"
+    volumes:
+      - "./sandbox:/sandbox"
+    environment:
+      - "ENV_VAR1=value1"
+      - "ENV_VAR2=value2"
+  timeout: 3600  # Timeout for sandbox execution in seconds
+  resource_limits:
+    cpus: "2"  # Number of CPUs allocated to the sandbox
+    memory: "4g"  # Memory allocated to the sandbox
+  logging:
+    level: "info"  # Logging level for sandbox operations
+    output: "sandbox.log"  # Log file for sandbox execution logs

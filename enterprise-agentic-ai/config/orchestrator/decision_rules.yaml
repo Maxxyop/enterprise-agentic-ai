@@ -1,0 +1,34 @@
+decision_rules:
+  - rule_id: 1
+    description: "Route tasks based on priority and type."
+    conditions:
+      - condition: "task.type == 'recon'"
+        action: "execute_recon_strategy"
+      - condition: "task.type == 'scan'"
+        action: "execute_scan_strategy"
+      - condition: "task.type == 'exploit'"
+        action: "execute_exploit_strategy"
+  
+  - rule_id: 2
+    description: "Assign tasks to appropriate agents."
+    conditions:
+      - condition: "task.agent == 'DeepSeek R1'"
+        action: "assign_to_deepseek"
+      - condition: "task.agent == 'Qwen-7B'"
+        action: "assign_to_qwen"
+
+  - rule_id: 3
+    description: "Handle task completion and feedback."
+    conditions:
+      - condition: "task.status == 'completed'"
+        action: "log_completion"
+      - condition: "task.status == 'failed'"
+        action: "request_feedback"
+
+  - rule_id: 4
+    description: "Adjust strategies based on observed outcomes."
+    conditions:
+      - condition: "outcome.success_rate < 0.5"
+        action: "adapt_strategy"
+      - condition: "outcome.success_rate >= 0.5"
+        action: "maintain_strategy"

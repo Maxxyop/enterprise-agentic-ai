@@ -1,0 +1,28 @@
+strategy_templates:
+  - name: "Basic Reconnaissance"
+    description: "Template for basic reconnaissance tasks."
+    steps:
+      - "Identify target domains"
+      - "Perform DNS enumeration"
+      - "Gather subdomain information"
+  
+  - name: "Web Application Scanning"
+    description: "Template for scanning web applications for vulnerabilities."
+    steps:
+      - "Scan for common vulnerabilities"
+      - "Identify exposed endpoints"
+      - "Check for misconfigurations"
+
+  - name: "API Testing"
+    description: "Template for testing APIs for security vulnerabilities."
+    steps:
+      - "Enumerate API endpoints"
+      - "Test for authentication issues"
+      - "Check for data exposure"
+
+  - name: "Exploitation Strategy"
+    description: "Template for exploitation tasks."
+    steps:
+      - "Identify potential vulnerabilities"
+      - "Attempt exploitation"
+      - "Document findings"

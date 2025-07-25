@@ -1,9 +1,0 @@
-model_routing:
-  - model: deepseek_r1
-    tasks:
-      - task: reasoning
-        description: Routes reasoning tasks to DeepSeek R1 agent.
-  - model: qwen_7b
-    tasks:
-      - task: command_execution
-        description: Routes command execution tasks to Qwen-7B agent.

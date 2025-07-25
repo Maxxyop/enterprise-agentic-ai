@@ -1,0 +1,26 @@
+# Hindi translations for the project
+
+{
+    "welcome": "स्वागत है",
+    "engagement": "संलग्नता",
+    "scan": "स्कैन",
+    "exploit": "शोषण",
+    "success": "सफलता",
+    "error": "त्रुटि",
+    "feedback": "प्रतिक्रिया",
+    "loading": "लोड हो रहा है",
+    "dashboard": "डैशबोर्ड",
+    "reports": "रिपोर्ट",
+    "settings": "सेटिंग्स",
+    "ai_agents": "एआई एजेंट",
+    "execute": "निष्पादित करें",
+    "analysis": "विश्लेषण",
+    "vulnerabilities": "कमजोरियाँ",
+    "training": "प्रशिक्षण",
+    "data_collection": "डेटा संग्रह",
+    "fine_tuning": "फाइन-ट्यूनिंग",
+    "model": "मॉडल",
+    "configuration": "कॉन्फ़िगरेशन",
+    "status": "स्थिति",
+    "details": "विवरण"
+}

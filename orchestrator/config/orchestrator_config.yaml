@@ -1,0 +1,21 @@
+orchestrator_config:
+  task_timeout: 300  # Timeout for tasks in seconds
+  max_concurrent_tasks: 5  # Maximum number of concurrent tasks
+  logging:
+    level: INFO  # Logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+    file: orchestrator.log  # Log file location
+  retry_policy:
+    max_retries: 3  # Maximum number of retries for failed tasks
+    backoff_factor: 2  # Backoff factor for retries
+  agent_selection:
+    preferred_agents:
+      - DeepSeek R1
+      - Qwen-7B
+  context_management:
+    max_context_length: 128000  # Maximum context length for DeepSeek R1
+  task_prioritization:
+    enable: true  # Enable task prioritization
+    default_priority: medium  # Default priority for tasks
+  notification_settings:
+    enable_notifications: true  # Enable notifications for task status
+    notification_email: alerts@example.com  # Email for notifications

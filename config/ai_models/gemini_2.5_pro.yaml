@@ -1,0 +1,26 @@
+model_name: "Gemini 2.5 Pro"
+model_type: "language_model"
+version: "1.0"
+description: "Gemini 2.5 Pro is a powerful language model designed for command execution and interaction."
+parameters:
+  max_tokens: 2048
+  temperature: 0.7
+  top_p: 0.9
+  frequency_penalty: 0.0
+  presence_penalty: 0.0
+  stop_sequences:
+    - "\n"
+    - "END"
+training_data:
+  source: "Diverse datasets including command execution scenarios and natural language instructions."
+  size: "50GB"
+performance_metrics:
+  accuracy: "85%"
+  response_time: "200ms"
+deployment:
+  endpoint: "http://api.gemini2.5pro.ai/v1/execute"
+  authentication: "Bearer token required"
+  scaling: "Horizontal scaling supported"
+logging:
+  level: "INFO"
+  file: "/var/log/gemini2.5pro.log"

@@ -1,0 +1,22 @@
+tool_configs:
+  nmap:
+    enabled: true
+    options:
+      - -sS
+      - -p 1-65535
+      - -T4
+  sqlmap:
+    enabled: true
+    options:
+      - --level=5
+      - --risk=3
+      - --batch
+  zap:
+    enabled: true
+    options:
+      - -quickurl
+      - -quickprogress
+      - -quickout
+  burp:
+    enabled: false
+    options: []

@@ -1,0 +1,49 @@
+FROM python:3.9-slim
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the requirements file
+COPY requirements/ai.txt .
+
+# Install dependencies
+RUN pip install --no-cache-dir -r ai.txt
+
+# Copy the AI agents code
+COPY ai_agents/ ./ai_agents/
+
+# Copy the orchestrator code
+COPY orchestrator/ ./orchestrator/
+
+# Copy the knowledge base code
+COPY knowledge_base/ ./knowledge_base/
+
+# Copy the execution engine code
+COPY execution_engine/ ./execution_engine/
+
+# Copy the observation system code
+COPY observation_system/ ./observation_system/
+
+# Copy the training pipeline code
+COPY training_pipeline/ ./training_pipeline/
+
+# Copy the backend code
+COPY backend/ ./backend/
+
+# Copy the frontend code
+COPY frontend/ ./frontend/
+
+# Copy the config files
+COPY config/ ./config/
+
+# Copy the scripts
+COPY scripts/ ./scripts/
+
+# Copy the documentation
+COPY docs/ ./docs/
+
+# Expose the necessary ports (if applicable)
+EXPOSE 8000
+
+# Command to run the application (adjust as necessary)
+CMD ["python", "backend/api/main.py"]
